@@ -1,0 +1,417 @@
+/* COMMON CSS SECTION */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: 'Roboto', sans-serif, Arial;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-weight: 400;
+  background: #000000;
+  color: #ffffff;
+}
+
+body {
+  background: #000000;
+  text-align: center;
+}
+
+/* MENU SECTION */
+.main-panel {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 80px;
+  background-color: #343a40;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.span-col {
+  color: #007bff;
+}
+
+nav {
+  float: none;
+  width: 100%;
+  background-color: #343a40;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 20px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+nav a.active {
+  color: #007bff;
+}
+
+/* MAIN BANNER */
+.container #home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.banner-section {
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.banner-section h1,
+.banner-section h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.banner-section a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border-radius: 25px;
+  text-align: center;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.banner-section a:hover {
+  background-color: #ffffff;
+  color: #007bff;
+}
+
+/* ABOUT US SECTION */
+.main-section {
+  width: 100%;
+  padding: 80px 0;
+  margin-top: 80px;
+  background-color: #000000;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading-text {
+  width: 100%;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #007bff;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content at the top */
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.about-us {
+  width: 80%;
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.about-us h2,
+.about-us h3 {
+  color: #007bff;
+}
+
+.about-us p {
+  font-size: 18px;
+  margin-top: 15px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+table th,
+table td {
+  font-size: 16px;
+  text-align: left;
+  padding: 5px 0px;
+  color: #ffffff;
+}
+
+/* SKILL SECTION */
+.skill {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.skill span {
+  float: right;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.skill div {
+  width: 100%;
+  margin-top: 10px;
+  background: #e7e7e7;
+  border-radius: 10px;
+  height: 20px;
+}
+
+.skill div span {
+  display: block;
+  background: #007bff;
+  height: 100%;
+  float: left;
+  border-radius: 10px;
+}
+
+/* EXPERIENCE SECTION */
+.edu-exp {
+  width: 97%;
+  margin: 1%;
+  padding-left: 10px;
+}
+
+.experience-list {
+  width: 100%;
+  padding: 30px 10px;
+  background: #000000;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.experience-content h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #007bff;
+}
+
+.experience-content h3 {
+  color: #007bff;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.experience-content p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* CONTACT US SECTION */
+.contact form {
+  width: 66%;
+  margin: 0 auto;
+}
+
+.contact input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  transition: border-color 0.3s ease;
+}
+
+.contact input:hover,
+textarea:hover {
+  border-color: #007bff;
+}
+
+.contact textarea {
+  height: 80px;
+}
+
+.contact button {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  padding: 10px;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #0056b3;
+}
+
+.contact h3 {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 60px;
+  color: #007bff;
+}
+
+.contact h4 {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 10px;
+  color: #6c757d;
+}
+
+.contact p {
+  text-align: center;
+  font-size: 16px;
+  color: #6c757d;
+}
+
+/* FOOTER SECTION */
+.footer {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #343a40;
+  text-align: center;
+}
+
+.footer-sect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.social-icon a {
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 20px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.social-icon a:hover {
+  color: #007bff;
+}
+
+/* RESPONSIVE SECTION */
+@media (max-width: 768px) {
+  .main-panel {
+    display: block;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .width-33,
+  .width-66 {
+    width: 100%;
+    float: none;
+  }
+
+  nav {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container #home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner-section {
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us {
+    width: 100%;
+  }
+
+  .about-us h2,
+  .about-us h3,
+  table th,
+  table td {
+    text-align: center;
+  }
+
+  .width-50 {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  .width-50 table {
+    margin: 0 auto;
+  }
+
+  .width-100 form {
+    width: 100%;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 100%;
+  }
+
+  .footer-sect {
+    flex-direction: column;
+  }
+
+  .social-icon a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
