@@ -85,10 +85,7 @@
                                     <th>Student:</th>
                                     <td> Studying</td>
                                 </tr>
-                                <tr>
-                                    <th>Website:</th>
-                                    <td> www.dezven.com</td>
-                                </tr>
+                            
                             </table>
                         </div>
                     </div>
@@ -199,7 +196,18 @@
             </div>
         </div>
     </div>
+ <script>
+        // Smooth scrolling when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
   
 </body>
 
